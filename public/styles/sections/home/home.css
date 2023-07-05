@@ -1,0 +1,261 @@
+.booking {
+  background-color: #222222;
+  width: 100%;
+}
+
+.booking__form__container {
+  max-width: 600px;
+}
+
+.about-us {
+  background-color: #F9F9F9;
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.home__rooms {
+  text-align: center;
+  position: relative;
+  padding: 25px 5%;
+}
+
+.home__rooms__card__slider {
+  position: relative;
+  width: 100%;
+  margin-top: 15%;
+}
+
+.room__slider__prev__button {
+  position: absolute;
+  top: 40%;
+  right: 85%;
+}
+
+.room__slider__next__button {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.home__rooms__icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 80%;
+  left: 10%;
+  bottom: 92%;
+  z-index: 1;
+}
+
+.video-section {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section__content__container {
+  max-width: 600px;
+}
+
+.video {
+  margin-bottom: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.golden__column {
+  display: none;
+}
+
+.menu-section {
+  max-width: 700px;
+  margin: 90px auto;
+}
+
+.menu__section__logo {
+  position: relative;
+}
+
+.menu__section__logo img {
+  width: 115px;
+  position: absolute;
+  top: -60px;
+  right: -10px;
+}
+
+.menu__section__card {
+  margin-bottom: 5%;
+}
+
+.menu__section__card__img {
+  width: 45%;
+  max-width: 250px;
+}
+
+.menu__section__card__text {
+  width: 50%;
+}
+
+.menu__card__text {
+  margin: 0;
+}
+
+.menu__section__slider {
+  max-width: 600px;
+}
+
+.menu__section__slider__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__slider__button {
+  margin-left: 3%;
+}
+
+.carousel-images__mobile {
+  margin-bottom: 50px;
+}
+
+.carousel-images {
+  display: none;
+}
+
+.carousel-images__container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.carousel__img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.achievements {
+  width: 100%;
+  background: #222222;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.achievement {
+  padding: 25px 0;
+}
+
+@media (min-width: 1000px) {
+  .booking {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .booking__form__container {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .booking__inputs__container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: none;
+    padding: 25px 10%;
+    width: 80%;
+    min-width: 950px;
+  }
+  .about-us__text__container {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .achievements {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 50px 0;
+  }
+  .video-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0;
+  }
+  .video-section__content__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .video-section__text__container {
+    padding-right: 10%;
+  }
+  .video__container {
+    position: absolute;
+    width: 30%;
+    max-width: 700px;
+    min-height: 250px;
+    right: 15%;
+    top: 25%;
+  }
+  .golden__column {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #BEAD8E;
+  }
+  .menu-section {
+    max-width: none;
+  }
+  .menu__section__logo img {
+    width: 230px;
+    top: -200px;
+    left: -25%;
+  }
+  .home__rooms {
+    padding: 25px 0;
+  }
+  .home__room__card__text__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .home__room__card__description__container {
+    text-align: left;
+    width: 60%;
+  }
+  .carousel-images__mobile {
+    display: none;
+  }
+  .carousel-images {
+    display: block;
+  }
+  .carousel-images__container__desktop {
+    display: flex;
+    width: 70%;
+    height: 350px;
+    margin: 50px auto;
+    justify-content: space-between;
+  }
+  .carousel__img {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=home.css.map */

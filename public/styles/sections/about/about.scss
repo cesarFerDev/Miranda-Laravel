@@ -1,0 +1,198 @@
+.about-section {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+//About Video
+.about-video {
+    text-align: center;
+}
+
+.about-content__container {
+    width: 100%;
+}
+
+.about-content__container video {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.about-content__container img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.about-photos__slider__container img {
+    width: 100%;
+}
+
+//Services
+.services-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.svg__plane {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(4%) saturate(1957%) hue-rotate(0deg) brightness(89%) contrast(81%);
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    min-height: 150px;
+    text-align: center;
+}
+
+.service img {
+    margin-bottom: 15px;
+}
+
+.service:hover {
+    background-color: #BEAD8E;
+    cursor: pointer;
+}
+
+.service:hover .service__text {
+    color: #FFFFFF;
+}
+
+.service:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(236deg) brightness(107%) contrast(101%);
+}
+
+
+//Restaurant
+.restaurant {
+    padding: 0 10%;
+}
+
+.restaurant__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+//Facilities Section
+.facilities {
+    padding: 10% 5%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.facilities--dark {
+    background-color: #222222;
+}
+
+.facilities__slider__card__text {
+    width: 100%;
+}
+
+.facilities__slider__card__icons{
+    position: relative;
+    height: 10em;
+}
+
+.facilities__slider__card__number {
+    position: absolute;
+    right: 0;
+}
+
+.facilities__slider__card__icon {
+    position: absolute;
+    top: 40%;
+}
+
+//Facts
+.fact {
+    width: 100%;
+    margin: 15% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fact__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.fact__icon {
+    margin-right: 10%;
+    margin-left: 2%;
+}
+
+.fact__text {
+    margin: 0;
+}
+.about-photos__slider__container {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .about-section {
+        max-width: 2000px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .about__video__title {
+        font-size: 72px;
+        line-height: 89px;
+    }
+    .services-icons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+    .service {
+        min-height: 200px;
+    }
+
+    .restaurant {
+        padding: 0 18%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .restaurant__text__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .facts__container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    .fact {
+        width: 90%;
+        margin: 50px 0;
+    }
+
+    .about-photos__slider__container {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-photos__slider__container img {
+        padding: 0 15px;
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+    .fact__text__container h1 {
+        font-size: 60px;
+    }
+    .facilities {
+        padding: 5% 0;
+    }
+}

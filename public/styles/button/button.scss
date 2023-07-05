@@ -1,0 +1,82 @@
+.button {
+    text-align: center;
+    height: 60px;
+    border: none;
+    color: #FFFFFF;
+    background: none;
+    max-width: 250px;
+    width: 60%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.burger__button__closed {
+    background-image: url('../../assets/buttons/Burger-button/burger-closed.png');
+    background-size: auto;
+    width: 20px;
+    height: 13px;
+    margin: 7%;
+    border: none;
+}
+
+.burger__button__open {
+    width: 18px;
+    height: 15px;
+    background-image: url('../../assets/buttons/Burger-button/burger-open.png');
+}
+
+.profile__button, .search__button {
+    height: 60px;
+    width: 60px;
+    margin: 0 10px;
+}
+
+
+
+.burger__button__open:hover {
+    cursor: pointer;
+}
+
+.burger__button__closed:hover {
+    cursor: pointer;
+}
+
+.booking__button {
+    width: 250px;
+}
+
+.room-detail__button {
+    width: 100%;
+    max-width: none;
+    margin-top: 2%;
+}
+
+.slider__button {
+    height: 32px;
+    width: 32px;
+    z-index: 1;
+}
+
+.button--white {
+    background-color: #FFFFFF;
+}
+
+.button--golden {
+    background-color: #BEAD8E;
+}
+
+.button--dark {
+    //background-color: #333333;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+}
+
+@media (min-width: 1000px) {
+    .burger__button__closed, .burger__button__open {
+        display: none;
+    }
+    .profile__button, .search__button {
+        border: 2px solid rgba(133, 133, 133, 0.3);
+    }
+}

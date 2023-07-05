@@ -1,0 +1,105 @@
+.offers {
+  background-color: #F8F8F8;
+}
+
+.room__offer__card__info {
+  background-color: #FFFFFF;
+  padding: 25px 10%;
+}
+
+.room__offer__amenities__container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.popular-rooms {
+  background-color: #222222;
+  text-align: center;
+}
+
+.popular__rooms__card__slider__mobile {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.related__rooms__card__slider {
+  display: none;
+}
+
+.popular__rooms__card__slider {
+  display: none;
+}
+
+.popular__rooms__card__container {
+  position: relative;
+  display: flex;
+  max-width: 600px;
+}
+
+.offers__cards__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .room__offer__card__info {
+    background-color: #FFFFFF;
+    border-top: 6px solid #BDAC8D;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+  }
+  .offers__cards__container {
+    max-width: none;
+  }
+  .room__offer__card__info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .room__offer__description__container {
+    width: 60%;
+    padding-right: 30px;
+  }
+  .room__offer__amenities__container {
+    width: 40%;
+  }
+  .popular__rooms__card__slider {
+    display: block;
+  }
+  .home__rooms__card__container {
+    width: 100%;
+  }
+  .popular__rooms__card__container {
+    max-width: 100%;
+    display: grid;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .related__rooms__card__container {
+    display: grid;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .popular__rooms__card__slider__mobile {
+    display: none;
+  }
+  .related__rooms__card__slider {
+    display: block;
+  }
+}/*# sourceMappingURL=offers.css.map */

@@ -1,0 +1,25 @@
+.paginator {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginator__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #FFFFFF;
+}
+
+.paginator__element:hover {
+  background-color: #BEAD8E;
+}
+
+.paginator__element:hover .paginator__text {
+  color: #FFFFFF;
+}/*# sourceMappingURL=paginator.css.map */

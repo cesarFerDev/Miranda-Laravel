@@ -1,0 +1,89 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__header {
+    width: 35%;
+    margin-right: 20%;
+}
+
+.logo__footer {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+
+.logo__image__rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+}
+
+.logo__image__H {
+    font-family: "Archivo"; 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: 0em;
+}
+
+.footer__logo__icon__text {
+    font-size: 40px;
+}
+
+.logo__background--white {
+    background-color: #FFFFFF;
+    box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+}
+
+.logo__background--golden {
+    height: 80px;
+    width: 80px;
+    background-color: #BEAD8E;
+    
+    box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15);
+}
+
+.logo__text__container {
+    margin-left: 20px;
+}
+
+.logo__text {
+    margin: 0;
+    font-family: "Archivo";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.5999999046325684px;
+}
+
+.footer__logo__text {
+    line-height: 28px;
+    font-size: 26px;
+}
+
+.logo__text--bold {
+    font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+    .logo__header {
+        margin: 0 15px;
+        width: 55%;
+    }
+    .logo__image__rectangle {
+        height: 80px;
+        width: 80px;
+        min-width: 80px;
+    }
+    .logo__image__rectangle h2 {
+        font-size: 40px;
+    }
+    .logo__text {
+        line-height: 28px;
+        font-size: 26px;
+    }
+}

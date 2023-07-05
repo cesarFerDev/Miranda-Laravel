@@ -1,0 +1,71 @@
+.date__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.home__date__input__field {
+    background: none;
+    border: none;
+    position: relative;
+    border-bottom:2px solid #BEAD8E;
+    margin-bottom: 5%;
+    height: 35px;
+}
+
+.home__date__input__field::-webkit-calendar-picker-indicator {
+    filter: invert(78%) sepia(35%) saturate(223%) hue-rotate(0deg) brightness(85%) contrast(88%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.home__date__input__field::-webkit-datetime-edit {
+    margin-left: 30px;
+}
+
+.input__field--bright {
+    height: 60px;
+    background-color: #F8F8F8;
+    border: none;
+}
+
+.room-detail__input__field {
+    padding: 0 12%;
+    width: 100%;
+}
+
+.room-detail__input__field::-webkit-calendar-picker-indicator {
+    filter: invert(55%) sepia(2%) saturate(17%) hue-rotate(319deg) brightness(85%) contrast(100%);
+    width: 20px;
+    height: 20px;
+}
+
+.contact__input__container {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.contact__input__container img {
+    position: absolute;
+    
+    top: 20px;
+    left: 3%;
+}
+
+.textarea {
+    height: 175px;
+}
+
+.contact__input__container textarea {
+    height: 150px;
+    padding-top: 20px;
+}
+
+@media (min-width: 1000px) {
+    .date__container {
+        width: 100%;
+        padding-right: 25px;
+        margin-bottom: 0;
+    }
+}

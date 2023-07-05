@@ -1,0 +1,104 @@
+.contact__cards__section {
+  padding: 25px 10%;
+  margin: 25px auto;
+  max-width: 700px;
+}
+
+.contact__card__background__img {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.contact__section__card {
+  height: 150px;
+  margin-bottom: 70px;
+}
+
+.contact__form__section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact__form__img img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.contact__map {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 350px;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.map {
+  width: 100%;
+}
+
+.contact__form__button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .contact__cards__section {
+    padding: 0;
+    display: flex;
+    width: 85%;
+    max-width: 1150px;
+    justify-content: space-between;
+    margin: 15px auto;
+    margin-top: 100px;
+  }
+  .contact__card {
+    margin-bottom: 40px;
+  }
+  .contact__section__card {
+    width: 30%;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .contact__map {
+    height: 700px;
+  }
+  .contact__form__section {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  .contact__form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    grid-template-areas: "contact__form__first__column contact__form__second__column" "contact__form__third__column contact__form__third__column";
+  }
+  .contact__form__first__column {
+    grid-area: contact__form__first__column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contact__form__second__column {
+    grid-area: contact__form__second__column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contact__form__third__column {
+    grid-area: contact__form__third__column;
+  }
+  .contact__form__section textarea {
+    height: 300px;
+  }
+}/*# sourceMappingURL=contact.css.map */

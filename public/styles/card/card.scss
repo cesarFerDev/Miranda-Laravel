@@ -1,0 +1,242 @@
+
+.home__cards {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.home__card {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__card__text {
+    position: relative;
+    text-align: center;
+    padding-bottom: 15px;
+    height: 50%;
+}
+
+.home__card__description {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.home__card__img {
+    margin-top: 30px;
+    width: 100%;
+    height: 50%;
+}
+
+.home__card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home__card__icon {
+    margin: 15px 0;
+}
+
+.home__card__shadow__icon {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: -1;
+}
+
+.home__card__text--dark {
+    background-color: #222222;
+}
+.first__home__card__text {
+    background-color: #FFFFFF;
+}
+
+
+
+.home__room__card {
+    margin-bottom: 250px;
+    max-width: 600px;
+}
+
+.home__room__card__text {
+    background-color: #FFFFFF;
+    position: absolute;
+    
+}
+
+.facilities__card__container {
+    margin-bottom: 50px;
+}
+
+.facilities__slider__card {
+    text-align: start;
+    margin: 0 auto;
+    padding: 5%;
+    max-width: 600px;
+}
+
+.facilities__slider__card--dark {
+    background-color: #292929;
+}
+
+.menu__section__card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.contact__card__img {
+    //width: 10%;
+    //height: 10%;
+    margin-right: 5%;
+}
+
+.contact__card__text {
+    width: 70%;
+}
+
+.room__card {
+    text-align: center;
+    //position: relative;
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room__card__img__container {
+    a {
+        width: 100%;
+        height: 100%;
+    }
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rooms__icons__icon {
+    
+}
+
+.room__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room__offer__card {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room__offer__card__img {
+    width: 100%;
+}
+
+.room__offer__card__img img {
+    width: 100%;
+}
+
+.room__offer__price__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    right: -25px;
+    top: -110px;
+}
+.room__card__grey__line {
+    display: none;
+}
+.room__offer__card__info__row {
+    position: relative;
+}
+
+
+@media (min-width: 1000px) {
+    .facilities__card__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .facilities__slider__card {
+        width: 100%;
+        //max-width: 350px;
+        min-width: 50px;
+    }
+
+    .home__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .home__card {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+    .first__home__card {
+        margin-top: 0;
+    }
+    .second__home__card {
+        flex-direction: column;
+    }
+    .second__home__card__img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .home__card__img {
+        
+    }
+    .home__card__text {
+        
+    }
+    .room__card__img__container {
+        height: 600px;
+    }
+    .room__card__img__container__petit {
+        height: 300px;
+    }
+    
+    .room__offer__price__container {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .room__offer__card {
+        margin-bottom: 700px;
+    }
+    .room__card__grey__line {
+        display: block;
+        border: 1px solid #F1F1F1;
+        margin: 25px 0;
+    }
+    .home__room__card {
+        margin-bottom: 250px;
+        max-width: none;
+    }
+}

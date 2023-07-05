@@ -1,0 +1,32 @@
+@import './text/text.css';
+@import './button/button.css';
+@import './card/card.css';
+@import './logo/logo.css';
+@import './paginator/paginator.css';
+@import './input/input.css';
+@import './sections/section.css';
+@import './sections/header/header.css';
+@import './sections/sub-header/sub-header.css';
+@import './sections/home/home.css';
+@import './sections/about/about.css';
+@import './sections/rooms/rooms.css';
+@import './sections/rooms/room-detail.css';
+@import './sections/rooms/offers.css';
+@import './sections/contact/contact.css';
+@import './sections/footer/footer.css';
+@import './slider.css';
+@import './alerts.css';
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700;900&family=Old+Standard+TT:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;500;700&display=swap");
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

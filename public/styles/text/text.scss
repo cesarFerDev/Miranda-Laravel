@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700;900&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    
+}
+
+.text--margin {
+    margin-bottom: 25px;
+}
+
+.button__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+}
+
+.return__button__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.48px;
+}
+
+.return__button__text:hover {
+    color:#BEAD8E;
+    cursor: pointer;
+}
+
+.section__header__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    //margin-bottom: 10%;
+}
+
+.section__title__text {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    //margin-bottom: 10%;
+}
+
+.booking__title__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+
+.booking__input__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+}
+
+.title__text--petit {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.card__text__title {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+}
+
+.home__room__text__price {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.room__text__price {
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.room__details__text__price {
+    text-align: left;
+}
+
+
+.menu__title__text {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+}
+
+.achievement__title__text {
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0px;
+}
+
+.achievement__subtitle__text {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+.contact__title__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+
+.footer__ending__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.48px;
+    margin: 15px 5%;
+}
+
+.service__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2.4px;
+}
+
+.restaurant__text {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -1.05px;
+}
+
+.paginator__text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.room__availability__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+    text-align: center;
+}
+
+.room-detail__input__text {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.room-amenities__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+// .offer__text__price--lined {
+//     font-family: 'Archivo';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 23px;
+//     line-height: 25px;
+//     margin-bottom: 5%;
+// }
+
+
+
+.text--lined {
+    text-decoration-line: line-through;
+}
+
+.offer__text__price {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+}
+.price--before__text {
+    font-size: 23px;
+}
+.offer__text__price--petit {
+    font-size: 12px;
+}
+
+.text--white {
+    color: #FFFFFF;
+}
+
+.text--dark {
+    color: #222222;
+}
+
+.text--grey {
+    color: #999999;
+}
+
+.text--golden {
+    color: #BEAD8E;
+}
+
+.text--red {
+    color: #DE5777;
+}
+
+@media (min-width: 1000px) {
+    // .text--margin {
+    //     margin-bottom: 30px;
+    // }
+    .section__header__text {
+        font-size: 14px;
+    }
+    .restaurant__text {
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: -1.440000057220459px;
+    }
+
+    .section__title__text {
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 90px;
+        letter-spacing: -2.4000000953674316px;
+    }
+    .title__text--petit {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .contact__title__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card__text__title {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -1.0800000429153442px;
+    }
+}
+
