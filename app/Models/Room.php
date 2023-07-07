@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Booking;
+//use App\Models\Booking;
 
-class Room extends Model
+class Room extends UUIDModel
 {
     use HasFactory;
 
@@ -22,7 +22,7 @@ class Room extends Model
 
     public function setBookings($bookings) {
         $aux = [];
-        foreach ($bookings as $index => $booking) {
+        foreach ($bookings as $booking) {
             if ($booking->room_id == $this->id) {
                 $aux[] = $booking;
             }
@@ -30,9 +30,13 @@ class Room extends Model
         $this->bookings = $aux;
     }
 
+    // public function setBookingsLaravel() {
+    //     return $this->hasMany(Booking::class);
+    // }
+
     public function isOccupied($date) {
         $datetime = strtotime($date->format('Y-m-d H:i:s'));
-        foreach ($this->bookings as $index => $booking) {
+        foreach ($this->bookings as $booking) {
             $room_candidate = $booking->room_id;
             $check_in = strtotime($booking->check_in);
             $check_out = strtotime($booking->check_out);
@@ -65,7 +69,7 @@ class Room extends Model
 
     public static function availableRooms($rooms, $startDate, $endDate) {
         $roomsAvailable = [];
-        foreach($rooms as $index => $room) {
+        foreach($rooms as $room) {
             if ($room->occupancyPercentage($startDate, $endDate) != 0) {
                 $roomsAvailable[] = $room;
             }

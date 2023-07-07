@@ -18,7 +18,7 @@ Rooms
     <section class="section rooms">
         <div class="rooms__grid__container">
             
-            @foreach($rooms as $index => $room)
+            @foreach($rooms as $room)
                 <div class="room__card">
                     <div class="room__card__img__container room__card__img__container__petit">
                         <a href = '/room/{{$room->id}}'>

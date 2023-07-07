@@ -136,7 +136,7 @@ Home
         <div class="swiper home__rooms__card__slider__mobile">
         <div class="swiper-wrapper home__rooms__card__container">
             
-            @foreach($rooms as $index => $room)
+            @foreach($rooms as $room)
                 <div class="swiper-slide home__room__card">
                 <div class="room__card__img__container">
                     <a href = '/room/{{$room->id}}'><img

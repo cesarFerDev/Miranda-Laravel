@@ -18,7 +18,7 @@ Offers
     <section class="section offers">
         <div class="offers__cards__container">
             
-          @foreach($rooms_offer as $index => $room)
+          @foreach($rooms_offer as $room)
             <div class="room__offer__card">
                 <div class="room__offer__card__img">
                     <img src='{{$room->getPhotos()[0]}}' alt="Room Offer"/>
@@ -100,7 +100,7 @@ Offers
 
         <div class="swiper popular__rooms__card__slider__mobile">
           <div class="swiper-wrapper popular__rooms__card__container">
-            @foreach($rooms_popular as $index => $room)
+            @foreach($rooms_popular as $room)
             <div class="swiper-slide room__card">
               <div class="room__card__img__container">
                 <a href = '/room/{{$room->id}}'><img
@@ -178,7 +178,7 @@ Offers
 
         <div class="popular__rooms__card__slider">
           <div class="popular__rooms__card__container">
-            @foreach($rooms_popular as $index => $room)
+            @foreach($rooms_popular as $room)
               <div class="room__card">
                 <div class="room__card__img__container room__card__img__container__petit">
                 <a href = '/room/{{$room->id}}'><img

@@ -233,7 +233,7 @@ Room Details
         <div class="grey__line"></div>
         <div class="swiper popular__rooms__card__slider__mobile">
           <div class="swiper-wrapper popular__rooms__card__container">
-            @foreach($rooms_related as $index => $room)
+            @foreach($rooms_related as $room)
               <div class="swiper-slide room__card">
                 <div class="room__card__img__container">
                   <a href = '/room/{{$room->id}}'><img
@@ -311,7 +311,7 @@ Room Details
         <div class="related__rooms__card__slider">
           <div class="related__rooms__card__container">
             
-            @foreach($rooms_related as $index => $room)
+            @foreach($rooms_related as $room)
               <div class="room__card">
                 <div class="room__card__img__container room__card__img__container__petit">
                   <a href = '/room/{{$room->id}}'><img

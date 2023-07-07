@@ -28,7 +28,8 @@ class RoomController extends Controller
                 return redirect()->back()->with('error', "Invalid Date Input");
             } else {
                 $bookings = Booking::all();
-                foreach($rooms as $index => $room) {
+                foreach($rooms as $room) {
+                    //$room->bookings = $room->setBookingsLaravel();
                     $room->setBookings($bookings);
                 }
                 $rooms = Room::availableRooms($rooms, $request->start, $request->end);
