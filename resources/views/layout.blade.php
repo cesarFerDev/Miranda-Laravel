@@ -39,9 +39,9 @@
             </div>
             
             <div class="header__icons">
-            <button class="button profile__button">
+            <a href="/login"><button class="button profile__button">
                 <img src="/assets/Header/Mobile/profile.png" alt="Profile Icon" />
-            </button>
+            </button></a>
             <button class="button search__button">
                 <img src="/assets/Header/Mobile/search.png" alt="Search Icon" />
             </button>
