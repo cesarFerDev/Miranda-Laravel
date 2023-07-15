@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignID('user_id')->references('id')->on('users_guests')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('room_id')->index();
             $table->foreign('room_id')->references('number')->on('rooms')->onUpdate('cascade')->onDelete('cascade');
-            $table->string('type');
+            $table->enum('type', ['Food', 'Service']);
             $table->string('description');
             $table->timestamps();
         });

@@ -1,3 +1,7 @@
+@section('title')
+    Orders
+@endsection
+
 <x-app-layout>
 
     <div class="py-12 text-left">
@@ -24,12 +28,12 @@
                         <td class="p-6 text-gray-900">{{$order->type}}</td>
                         <td class="p-6 text-gray-900">{{$order->description}}</td>
                         <td class="p-6 text-gray-900">{{$order->created_at}}</td>
-                        <td class="p-6 text-gray-900"><a href="orders/{{$order->id}}"><strong>Edit</strong></a></td>
+                        <td class="p-6 text-gray-900"><a href="orders/{{$order->id}}"><img src="assets/Orders/edit.svg" alt="Edit button"/></a></td>
                         <td>
                             <form action="{{ url('/orders', ['id' => $order->id])}}" method="POST">
                                 @method('delete')
                                 @csrf
-                                <button style="font-size: 26px; color: red;" class="p-6" type="submit">X</button>
+                                <button style="font-size: 26px; color: red;" class="p-6" type="submit"><img src="assets/Orders/delete.svg" alt="Delete button"/></button>
                             </form>
                         </td>
                     </tr>

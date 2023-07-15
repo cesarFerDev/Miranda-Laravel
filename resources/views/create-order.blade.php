@@ -1,3 +1,11 @@
+@section('title')
+    @if($order != null)
+        Edit Order
+    @else 
+        New Order
+    @endif
+@endsection
+
 <x-app-layout>
     <form class="py-12" method="POST">
         @csrf
@@ -13,7 +21,10 @@
                 
             </select>
             <label for="type" class="py-2 text-gray-900">Type: </label>
-            <input style="width: 50%; min-width: 150px;border-bottom: 1px solid black; margin-bottom: 15px" name="type" class="p-2 text-gray-900" value='{{$order != null ? $order->type : ""}}' required>
+            <select style="width: 20%; min-width: 200px; border: none; border-bottom: 1px solid black; margin-bottom: 15px" name="type">
+                <option value="Food" {{$order != null ? ($order->type == "Food" ? "selected" : "") : ""}}>Food</option>
+                <option value="Service" {{$order != null ? ($order->type == "Service" ? "selected" : "") : ""}}>Service</option>
+            </select>
             <label for="description" class="py-2 text-gray-900">Description: </label>
             <input style="border: none; border-bottom: 1px solid black; margin-bottom: 15px" name="description" class="p-2 text-gray-900" value='{{$order != null ? $order->description : ""}}' required></input>
             <x-primary-button style="max-width:100px; justify-content: center; margin: 10px auto" type="submit">
