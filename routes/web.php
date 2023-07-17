@@ -40,12 +40,12 @@ Route::post('/contact', [ContactController::class, 'store']);
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/orders', [OrderController::class, 'index'])->middleware(['auth', 'verified'])->name('orders');
-    Route::post('/orders/create', [OrderController::class, 'store'])->middleware(['auth', 'verified'])->name('orders.store');
-    Route::get('/orders/create', [OrderController::class, 'create'])->middleware(['auth', 'verified'])->name('orders.create');
-    Route::delete('/orders/{id}', [OrderController::class, 'destroy'])->middleware(['auth', 'verified'])->name('orders.delete');
-    Route::get('/orders/{id}', [OrderController::class, 'show'])->middleware(['auth', 'verified'])->name('orders.show');
-    Route::patch('/orders/{id}', [OrderController::class, 'update'])->middleware(['auth', 'verified'])->name('orders.update');
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders');
+    Route::post('/orders/create', [OrderController::class, 'store'])->name('orders.store');
+    Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
+    Route::delete('/orders/{id}', [OrderController::class, 'destroy'])->name('orders.delete');
+    Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show');
+    Route::patch('/orders/{id}', [OrderController::class, 'update'])->name('orders.update');
 });
 
 Route::middleware('auth')->group(function () {
