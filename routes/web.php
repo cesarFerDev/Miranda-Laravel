@@ -41,10 +41,12 @@ Route::post('/contact', [ContactController::class, 'store']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/orders', [OrderController::class, 'index'])->name('orders');
+
     Route::post('/orders/create', [OrderController::class, 'store'])->name('orders.store');
     Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
+
     Route::delete('/orders/{id}', [OrderController::class, 'destroy'])->name('orders.delete');
-    Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show');
+    Route::get('/orders/{id}', [OrderController::class, 'edit'])->name('orders.edit');
     Route::patch('/orders/{id}', [OrderController::class, 'update'])->name('orders.update');
 });
 

@@ -14,7 +14,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::orderBy('id', 'asc')->get();
+        $orders = Order::where('user_id', Auth::id())->orderBy('id', 'asc')->get();
         return view('orders', ['orders' => $orders]);
     }
 
@@ -24,7 +24,7 @@ class OrderController extends Controller
     public function create()
     {
         $rooms = Room::orderBy('number', 'asc')->get();
-        return view('create-order', ['rooms' => $rooms, 'order' => null]);
+        return view('order-form', ['rooms' => $rooms, 'order' => null]);
     }
 
     /**
@@ -46,9 +46,7 @@ class OrderController extends Controller
      */
     public function show(string $id)
     {
-        $rooms = Room::orderBy('number', 'asc')->get();
-        $order = Order::where('id', $id)->firstOrFail();
-        return view('create-order', ['rooms' => $rooms,'order' => $order]);
+        
     }
 
     /**
@@ -56,6 +54,9 @@ class OrderController extends Controller
      */
     public function edit(string $id)
     {
+        $rooms = Room::orderBy('number', 'asc')->get();
+        $order = Order::where('id', $id)->firstOrFail();
+        return view('order-form', ['rooms' => $rooms,'order' => $order]);
     }
 
     /**

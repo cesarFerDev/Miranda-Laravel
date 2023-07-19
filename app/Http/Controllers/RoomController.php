@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Room;
 use App\Models\Booking;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -24,12 +25,11 @@ class RoomController extends Controller
             $today =  strtotime(date('Y-m-d H:i:s'));
             $startDate = $request->start; 
             $endDate = $request->end;
-            if (strtotime($startDate) <= $today or  strtotime($startDate) > strtotime($endDate)) {
+            if (strtotime($startDate) <= $today or strtotime($startDate) > strtotime($endDate)) {
                 return redirect()->back()->with('error', "Invalid Date Input");
             } else {
                 $bookings = Booking::all();
                 foreach($rooms as $room) {
-                    //$room->bookings = $room->setBookingsLaravel();
                     $room->setBookings($bookings);
                 }
                 $rooms = Room::availableRooms($rooms, $request->start, $request->end);

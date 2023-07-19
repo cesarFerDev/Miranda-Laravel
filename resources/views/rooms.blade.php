@@ -47,10 +47,11 @@ Rooms
             @endforeach
             
         </div>
-        <div class="paginator">
-            <div class="paginator__element">
+        {{ $rooms->links('vendor.pagination.default') }}
+        <!-- <div class="paginator">
+            <button class="paginator__element paginator__text">
                 <p class="paginator__text">‹‹</p>
-            </div>
+            </button>
             <div class="paginator__element">
                 <p class="paginator__text">1</p>
             </div>
@@ -69,9 +70,10 @@ Rooms
             <div class="paginator__element">
                 <p class="paginator__text">››</p>
             </div>
-        </div>
+        </div> -->
     </section>
 @endsection
 @section('scripts')
     <script src="scripts/burgerMenu.js"></script>
+    <!-- <script src="scripts/paginator.js"></script> -->
 @endsection

@@ -14,7 +14,13 @@
     align-items: center;
     height: 50px;
     width: 50px;
-    background-color: #FFFFFF;
+    border: none;
+    background: none;
+}
+
+.paginator__element--active {
+    background-color: #BEAD8E;
+    color:#FFFFFF
 }
 
 .paginator__element:hover {

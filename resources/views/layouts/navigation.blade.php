@@ -5,8 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="aspect-auto shrink-0 flex items-center">
-                    <a href="{{ route('orders') }}">
-                        <!-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800" /> -->
+                    <a href="/home">
                         <div class="logo logo__header" style="margin:0">
                             <div class="logo__image__rectangle logo__background--white" style="height: 4em; width: 1.5em; min-width: 60px">
                                 <h2 class="logo__image__H" style="font-size: 34px;">H</h2>

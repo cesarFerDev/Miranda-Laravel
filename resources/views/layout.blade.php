@@ -21,14 +21,15 @@
             <div class="left__header__content">
             <button class="button burger__button__closed"></button>
             <div class="logo logo__header">
-            <div class="logo__image__rectangle logo__background--white">
-                <h2 class="logo__image__H">H</h2>
-            </div></a>
-            <div class="logo__text__container">
-                <h3 class="logo__text logo__text--bold">HOTEL</h3>
-                <h3 class="logo__text">MIRANDA</h3>
-            </div>
-            
+                <a href="/home">
+                    <div class="logo__image__rectangle logo__background--white">
+                        <h2 class="logo__image__H">H</h2>
+                    </div>
+                </a>
+                <div class="logo__text__container">
+                    <h3 class="logo__text logo__text--bold">HOTEL</h3>
+                    <h3 class="logo__text">MIRANDA</h3>
+                </div>
             </div>
             <ul class="header__menu__closed">
                 <a href="/about"><li class="menu__item">About Us</li></a>
@@ -53,9 +54,11 @@
         <div class="footer">
         <div>
             <div class="logo logo__footer">
+                
                 <div class="logo__image__rectangle logo__background--golden">
                     <h2 class="logo__image__H footer__logo__icon__text text--white">H</h2>
                 </div>
+                
                 <div class="logo__text__container">
                     <h3 class="logo__text footer__logo__text logo__text--bold">HOTEL</h3>
                     <h3 class="logo__text footer__logo__text">MIRANDA</h3>
@@ -103,7 +106,7 @@
                 <img class="contact__card__img" src="/assets/Footer/phone.png" alt=""/>
                 <div class="contact__card__text">
                     <h4 class="section__title__text contact__title__text ">Phone Number</h4>
-                    <p class="text contact__subtitle__text">622 523 493</p>
+                    <p class="text contact__subtitle__text">+34 622 523 493</p>
                 </div>
                 
             </div>
@@ -111,7 +114,7 @@
                 <img class="contact__card__img" src="/assets/Footer/mail.png" alt=""/>
                 <div class="contact__card__text">
                     <h4 class="section__title__text contact__title__text ">Mail</h4>
-                    <p class="text contact__subtitle__text">jekkproducer@gmail.com</p>
+                    <p class="text contact__subtitle__text">cesarfercerezuela@gmail.com</p>
                 </div>
             </div>
             <div class="contact__card">
@@ -128,7 +131,7 @@
         </div>
         <footer class="footer__ending__container">
             <div class="footer__ending">
-                <h4 class="footer__ending__text">Copyright By@Example-2020</h4>
+                <h4 class="footer__ending__text">Copyright By@Jekk0-2020</h4>
                 <h4 class="footer__ending__text">Terms of use | Privacy Environmental Policy</h4>
             </div>
         </footer>
@@ -152,7 +155,7 @@
                     })
             </script>
         @endif
-            <!-- pop up -->
+            <script src="scripts/header.js"></script>
             @yield('scripts')
    </body>
 </html>
