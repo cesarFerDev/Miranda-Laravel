@@ -47,7 +47,7 @@ Rooms
             @endforeach
             
         </div>
-        {{ $rooms->links('vendor.pagination.default') }}
+        <!-- {{ $rooms->links('vendor.pagination.default') }} -->
         <!-- <div class="paginator">
             <button class="paginator__element paginator__text">
                 <p class="paginator__text">‹‹</p>
