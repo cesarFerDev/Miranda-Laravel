@@ -12,10 +12,14 @@ Home
         </h1>
         <div class="sub-header__home__buttons__container">
         <button class="button sub-header__button button--golden">
-            <span class="button__text">TAKE A TOUR</span>
+            <a href="#video">
+                <span class="button__text">TAKE A TOUR</span>
+            </a>
         </button>
         <button class="button sub-header__button button--dark">
-            <span class="button__text">LEARN MORE</span>
+            <a href='/about'>
+                <span class="button__text">LEARN MORE</span>
+            </a>
         </button>
         </div>
         
@@ -138,70 +142,71 @@ Home
             
             @foreach($rooms as $room)
                 <div class="swiper-slide home__room__card">
-                <div class="room__card__img__container">
-                    <a href = '/room/{{$room->id}}'><img
-                    class="room__card__img"
-                    src='{{$room->getPhotos()[0]}}'
-                    alt="Room"
-                    /></a>
-                    <div class="rooms__icons home__rooms__icons">
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/bed_icon.png"
-                        alt="Bed Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/wifi_icon.png"
-                        alt="Wifi Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/car_icon.png"
-                        alt="Car Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/snow_icon.png"
-                        alt="Snow Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/gym_icon.png"
-                        alt="Gym Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/smoke_icon.png"
-                        alt="Smoke Icon"
-                    />
-                    <img
-                        class="rooms__icons__icon"
-                        src="/assets/Rooms-slider-icons/drink_icon.png"
-                        alt="Drink Icon"
-                    />
-                    </div>
-                    <div class="home__room__card__text__container room__card__text home__room__card__text">
-                    <div class="home__room__card__description__container">
-                        <h3
-                        class="text room__text card__text__title  text--margin text--dark"
-                    >
-                        {{$room->type}} {{$room->number}}
-                    </h3>
-                    <p class="text text--margin text--grey">
-                        {{$room->description}}
-                    </p>
-                    </div>
-                    
-                    <div class="room__pricing__text__container">
-                        <h4
-                        class="home__room__text__price room__text__price--margin text--golden"
+                    <div class="room__card__img__container">
+                        <a href = '/room/{{$room->id}}'><img
+                        class="room__card__img"
+                        src='{{$room->getPhotos()[0]}}'
+                        alt="Room"
+                        /></a>
+                        <div class="rooms__icons home__rooms__icons">
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/bed_icon.png"
+                            alt="Bed Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/wifi_icon.png"
+                            alt="Wifi Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/car_icon.png"
+                            alt="Car Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/snow_icon.png"
+                            alt="Snow Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/gym_icon.png"
+                            alt="Gym Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/smoke_icon.png"
+                            alt="Smoke Icon"
+                        />
+                        <img
+                            class="rooms__icons__icon"
+                            src="/assets/Rooms-slider-icons/drink_icon.png"
+                            alt="Drink Icon"
+                        />
+                        </div>
+                        <div class="home__room__card__text__container room__card__text home__room__card__text">
+                        <div class="home__room__card__description__container">
+                            <h3
+                            class="text room__text card__text__title  text--margin text--dark"
                         >
-                        ${{$room->price}}/Night
-                        </h4>
+                            {{$room->type}} {{$room->number}}
+                        </h3>
+                        <p class="text text--margin text--grey">
+                            {{$room->description}}
+                        </p>
+                        </div>
+                        
+                        <div class="room__pricing__text__container">
+                            <h4
+                            class="home__room__text__price room__text__price--margin text--golden"
+                            >
+                            ${{$room->price}}/Night
+                            </h4>
+                            
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
                 </div>
             @endforeach
         </div>
@@ -210,7 +215,7 @@ Home
         </div>
     </section>
 
-    <section class="section video-section">
+    <section id="video" class="section video-section">
         <div class="video-section__content__container">
         <div class="video-section__text__container">
             <h4 class="section__header__text text--margin text--golden">

@@ -22,10 +22,10 @@ class RoomController extends Controller
         $rooms = Room::orderBy('number', 'asc')->get();
 
         if($request->start != "" and $request->end != "") {
-            $today =  strtotime(date('Y-m-d H:i:s'));
+            $today = strtotime(date('Y-m-d 00:00:00'));
             $startDate = $request->start; 
             $endDate = $request->end;
-            if (strtotime($startDate) <= $today or strtotime($startDate) > strtotime($endDate)) {
+            if (strtotime($startDate) < $today or strtotime($startDate) > strtotime($endDate)) {
                 return redirect()->back()->with('error', "Invalid Date Input");
             } else {
                 $bookings = Booking::all();
