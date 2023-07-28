@@ -43,9 +43,9 @@
             <a href="/login"><button class="button profile__button">
                 <img src="/assets/Header/Mobile/profile.png" alt="Profile Icon" />
             </button></a>
-            <button class="button search__button">
+            <!-- <button class="button search__button">
                 <img src="/assets/Header/Mobile/search.png" alt="Search Icon" />
-            </button>
+            </button> -->
             </div>
             
         </div>
@@ -131,7 +131,7 @@
         </div>
         <footer class="footer__ending__container">
             <div class="footer__ending">
-                <h4 class="footer__ending__text">Copyright By@Jekk0-2020</h4>
+                <h4 class="footer__ending__text">Copyright By@Jekk0 2023</h4>
                 <h4 class="footer__ending__text">Terms of use | Privacy Environmental Policy</h4>
             </div>
         </footer>

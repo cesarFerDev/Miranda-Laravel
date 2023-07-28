@@ -70,9 +70,9 @@ Home
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
         </p>
-        <button class="button button--golden">
-        <span class="button__text">BOOK NOW</span>
-        </button>
+        <a href = '/rooms'><button class="button button--golden">
+            <span class="button__text">BOOK NOW</span>
+        </button></a>
         </div>
         
         
@@ -236,9 +236,9 @@ Home
             <video class="video" src="/assets/Videos/Miranda home page video (no audio).webm" autoplay loop muted></video>
         </div>
 
-        <button class="button button--golden">
+        <a href = '/rooms'><button class="button button--golden">
             <span class="button__text">BOOK NOW</span>
-        </button>
+        </button></a>
         </div>
         <div class="golden__column"></div>
     </section>

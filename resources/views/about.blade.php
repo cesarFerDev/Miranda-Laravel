@@ -49,7 +49,7 @@ About Us
             <h4 class="section__header__text text--margin text--grey">RESTAURANT</h4>
             <h3 class="card__text__title restaurant__text text--margin text--dark">Get Restaurant Facilities & Many Other More</h3>
             <p class="text text--margin text--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <button class="button button--golden"><span class="button__text">TAKE A TOUR</span></button>
+            <a href = '/home'><button class="button button--golden"><span class="button__text">TAKE A TOUR</span></button></a>
         </div> 
     </section>
 
