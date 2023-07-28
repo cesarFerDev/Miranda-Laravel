@@ -11,16 +11,16 @@ Home
         The Perfect Base For You
         </h1>
         <div class="sub-header__home__buttons__container">
-        <a href="#video"><button class="button sub-header__button button--golden">
-            
+        <button class="button sub-header__button button--golden">
+            <a href="#video">
                 <span class="button__text">TAKE A TOUR</span>
-            
-        </button></a>
-        <a href='/about'><button class="button sub-header__button button--dark">
-            
+            </a>
+        </button>
+        <button class="button sub-header__button button--dark">
+            <a href='/about'>
                 <span class="button__text">LEARN MORE</span>
-            
-        </button></a>
+            </a>
+        </button>
         </div>
         
     </section>
